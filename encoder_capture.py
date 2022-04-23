@@ -27,6 +27,7 @@ try:
 except KeyboardInterrupt:
     imu_dataset = np.vstack(imu_dataset)
     print('saving the dataset')
-    np.savetxt("data_tmp_dir/enc_dataset.csv", imu_dataset, delimiter=",")
+    np.savetxt("/home/mohammad/Desktop/aras_vio_end_effector/data_tmp_dir/enc_dataset.csv", imu_dataset, delimiter=",")    
     port.flush()
     port.close()
+    print('dataset saved')
